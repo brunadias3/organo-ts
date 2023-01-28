@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import Banner from './componentes/Banner/Banner.js';
+import Banner from './componentes/Banner/Banner';
 import Formulario from './componentes/Formulario';
 import Times from './componentes/Times';
 import Rodape from './componentes/Rodape/index.js';
@@ -58,7 +58,7 @@ function App() {
 
   return (
     <div className="App">
-      <Banner />
+      <Banner enderecoImagem='/imagens/banner.png' textoAlternativo='O banner principal da página do Organo' />
       <Formulario times={times.map(time => time.nome)} aoColaboradorCadastrado={colaborador => aoNovoColaboradorAdicionado(colaborador)}/>
       {times.map(times => <Times 
       nome={times.nome} 
