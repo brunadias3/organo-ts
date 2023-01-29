@@ -2,7 +2,7 @@ import { useState } from 'react';
 import Banner from './componentes/Banner/Banner';
 import Formulario from './componentes/Formulario';
 import Times from './componentes/Times';
-import Rodape from './componentes/Rodape/index.js';
+import Rodape from './componentes/Rodape';
 
 function App() {
 
