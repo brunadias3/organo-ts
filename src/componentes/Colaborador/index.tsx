@@ -5,6 +5,7 @@ interface ColaboradorProps {
     imagem: string
     nome: string
     cargo: string
+    data: string
 }
 
 const Colaborador = (props: ColaboradorProps) => {
@@ -17,6 +18,7 @@ const Colaborador = (props: ColaboradorProps) => {
             <div className='rodape'>
                 <h4>{props.nome}</h4>
                 <h5>{props.cargo}</h5>
+                <h5>{new Date(props.data).toLocaleDateString()}</h5>
             </div>
         </div>
     )
